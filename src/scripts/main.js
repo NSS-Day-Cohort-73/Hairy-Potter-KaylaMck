@@ -1,6 +1,6 @@
 // Imports go first
+import { firePottery } from "./Kiln.js";
 import { makePottery } from "./PotteryWheel.js";
-
 
 
 // Make 5 pieces of pottery at the wheel
@@ -18,6 +18,17 @@ console.log(pitcher);
 
 
 // Fire each piece of pottery in the kiln
+let firedMug = firePottery(mug, 2100);
+let firedPlatter = firePottery(platter, 2250);
+let firedVase = firePottery(vase, 2000);
+let firedBowl = firePottery(bowl, 2200);
+let firedPitcher = firePottery(pitcher, 2300);
+
+console.log(firedMug);
+console.log(firedPlatter);
+console.log(firedVase);
+console.log(firedBowl);
+console.log(firedPitcher);
 
 
 // Determine which ones should be sold, and their price
