@@ -120,12 +120,12 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > I was able to display the HTML, with the correct data, in the browser by converting the potteryToSell array into HTML. I started by importing the usePottery() variable, which contains the potteryToSell array. Then I created elements, inside literals (``), for each item in the array; which allowed me to convert each item into a dynamic single string HTML. I was able to iterate through the array using the .map method, and was able to return each single string as one single string, without needing to concatenate, using the .join('') method. From there I was able to render the HTML to the DOM, in main.js, by referencing the potteryList element, from the index.html, and inserting the HTML using .innerHTML.
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > (https://www.loom.com/share/419893f7525048388b7e70b0fa81aae2)
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > The PotteryWheel module only has one function, makePottery(), because it handles one specific task; this is also known as separation of concerns. Separating the modules into specific "concerns" allows you to focus on a single part of the project, making the code easier to maintain.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > The first step I would need to take in displaying the discounted pottery pieces in my catalog would be to modify my toSellOrNotToSell function so it includes the cracked pottery pieces and sets their price to a fixed $2.50, rather than to sell them by their weight. Then I would need to modify my PotteryList function to include the cracked pottery and it's correct information. I would want to make sure the cracked pieces are being displayed as cracked, so I would modify the display logic by adding a label. The label is used to display whether or not a piece of pottery is cracked, but it is also used to make sure the correct price is being displayed in the HTML logic; if the pottery is labeled as cracked the HTML will know it's price is set to $2.50.
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/45debf4aaf13486585dcce85315c83de
