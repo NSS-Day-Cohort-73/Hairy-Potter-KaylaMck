@@ -2,7 +2,7 @@
 import { firePottery } from "./Kiln.js";
 import { toSellOrNotToSell } from "./PotteryCatalog.js";
 import { makePottery } from "./PotteryWheel.js";
-import { PotteryList } from "./potteryList.js";
+import { PotteryList } from "./PotteryList.js";
 
 
 // Make 5 pieces of pottery at the wheel
